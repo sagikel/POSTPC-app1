@@ -1,5 +1,5 @@
 # POSTPC-app1
-new POSTPC project
+new POSTPC project.
 "todoboom" app in course POSTPC.
 
 As request:
