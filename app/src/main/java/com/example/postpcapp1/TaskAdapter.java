@@ -1,27 +1,20 @@
 package com.example.postpcapp1;
 
 import android.content.Context;
-import android.nfc.Tag;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import java.util.ArrayList;
 
 public class TaskAdapter extends RecyclerView.Adapter<TaskHolder> {
 
     private ArrayList<Task> tasksArrayList = new ArrayList<>();
-    private Context context;
-    private String msg1 = "TODO ";
-    private String msg2 = " is now DONE. BOOM!";
+    private MainActivity mainActivity;
 
-    TaskAdapter(Context context){
-        this.context = context;
+    TaskAdapter(MainActivity mainActivity){
+        this.mainActivity = mainActivity;
     }
 
     @NonNull
@@ -43,21 +36,25 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskHolder> {
         holder.constraintLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!Task.arrayList.get(position).isDone()){
-                    Task.arrayList.get(position).setDone(true);
-                    holder.imageView.setImageResource(R.drawable.checked_checkbox);
-                    Toast.makeText(context,
-                            msg1 + Task.arrayList.get(position).getTask() + msg2,
-                            Toast.LENGTH_LONG).show();
-                }
+                mainActivity.updateTODO(position);
+            }
+        });
+
+        holder.constraintLayout.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                mainActivity.removeTODO(position);
+                notifyDataSetChanged();
+                return false;
             }
         });
     }
 
-    public void setTasksList(ArrayList<Task> list){
+    void setTasksList(ArrayList<Task> list, boolean dataSetChange){
         tasksArrayList.clear();
         tasksArrayList.addAll(list);
-        notifyDataSetChanged();
+        if (dataSetChange)
+            notifyDataSetChanged();
     }
 
     @Override

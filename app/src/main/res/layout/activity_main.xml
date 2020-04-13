@@ -14,7 +14,7 @@
         android:layout_marginTop="12dp"
         android:text="@string/to_do_list_n"
         android:textAppearance="@style/TextAppearance.AppCompat.Display3"
-        android:textColor="@color/black"
+        android:textColor="@color/darkGreen"
         android:textStyle="bold|italic"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -35,7 +35,7 @@
         android:id="@+id/EditTextToInsert"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/insert_here_your_future_task"
+        android:hint="@string/future_task"
         android:text=""
         app:layout_constraintBottom_toTopOf="@+id/ButtonSave" />
 

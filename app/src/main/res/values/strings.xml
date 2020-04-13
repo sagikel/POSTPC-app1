@@ -2,6 +2,12 @@
     <string name="app_name">POSTPC app1</string>
     <string name="to_do_list_n">TO DO LIST</string>
     <string name="create">Create</string>
-    <string name="nothing_to_do_yet">Nothing to do yet..\n</string>
-    <string name="insert_here_your_future_task">Your future TODO?</string>
+    <string name="future_task">Your future TODO?</string>
+    <string name="emptyTodoMsg">You can\'t create an empty TODO..</string>
+    <string name="delete1">Delete TODO..</string>
+    <string name="delete2">\n\nAre you Sure you want to delete?</string>
+    <string name="done1">TODO \</string>
+    <string name="done2">\ is now DONE. BOOM!</string>
+    <string name="Msg">You can\'t create an empty TODO..</string>
+
 </resources>

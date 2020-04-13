@@ -4,14 +4,14 @@ import java.util.ArrayList;
 
 public class Task {
 
-    public static ArrayList<Task> arrayList = new ArrayList<>();
+    static ArrayList<Task> taskArrayList = new ArrayList<>();
     private String task;
     private boolean done;
 
     public Task(String description){
         task = description;
         done = false;
-        arrayList.add(this);
+        taskArrayList.add(this);
     }
 
     public String getTask() {
@@ -26,5 +26,10 @@ public class Task {
         this.done = done;
     }
 
-
+    public static void setArrayTask(ArrayList<Task> arrayList){
+        if (arrayList == null)
+            return;
+        taskArrayList.clear();
+        taskArrayList.addAll(arrayList);
+    }
 }

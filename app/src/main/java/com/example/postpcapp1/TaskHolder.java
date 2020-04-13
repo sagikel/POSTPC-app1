@@ -8,7 +8,7 @@ import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class TaskHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+public class TaskHolder extends RecyclerView.ViewHolder {
 
     TextView textView;
     ImageView imageView;
@@ -19,10 +19,5 @@ public class TaskHolder extends RecyclerView.ViewHolder implements View.OnClickL
         textView = view.findViewById(R.id.task_view);
         imageView = view.findViewById(R.id.checkbox);
         constraintLayout = view.findViewById(R.id.parent_layout);
-    }
-
-    @Override
-    public void onClick(View v) {
-
     }
 }
