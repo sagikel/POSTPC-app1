@@ -9,5 +9,11 @@
     <string name="done1">TODO \</string>
     <string name="done2">\ is now DONE. BOOM!</string>
     <string name="Msg">You can\'t create an empty TODO..</string>
+    <string name="delete_todo">Delete TODO</string>
+    <string name="un_mark_todo">\ Un-Mark TODO</string>
+    <string name="completed_todo">Completed TODO</string>
+    <string name="edit_todo">Edit TODO</string>
+    <string name="apply_changes">Apply changes</string>
+    <string name="todo_is_done">TODO is Done</string>
 
 </resources>

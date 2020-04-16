@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".NotCompletedTodoActivity">
+
+    <TextView
+        android:id="@+id/TextViewHeader2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/edit_todo"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@color/darkGreen"
+        android:textStyle="bold|italic"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/CreateDate1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="116dp"
+        android:text="TextView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ModifyDate1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        app:layout_constraintLeft_toLeftOf="@+id/CreateDate1"
+        app:layout_constraintTop_toBottomOf="@+id/CreateDate1" />
+
+    <EditText
+        android:id="@+id/editTODO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintLeft_toLeftOf="@+id/ModifyDate1"
+        app:layout_constraintTop_toBottomOf="@+id/ModifyDate1" />
+
+    <ImageButton
+        android:id="@+id/UnMarkButton"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/DoneButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:srcCompat="@drawable/iconfinder_disc_floopy" />
+
+    <ImageButton
+        android:id="@+id/DoneButton"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:srcCompat="@drawable/iconfinder_tick" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/apply_changes"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/UnMarkButton"
+        app:layout_constraintLeft_toRightOf="@+id/UnMarkButton"
+        app:layout_constraintTop_toTopOf="@+id/UnMarkButton" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/todo_is_done"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/DoneButton"
+        app:layout_constraintLeft_toRightOf="@+id/DoneButton"
+        app:layout_constraintTop_toTopOf="@+id/DoneButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

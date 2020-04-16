@@ -29,23 +29,15 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskHolder> {
     @Override
     public void onBindViewHolder(@NonNull final TaskHolder holder, final int position) {
         Task task = tasksArrayList.get(position);
-        holder.textView.setText(task.getTask());
-        holder.imageView.setImageResource(task.isDone() ?
-                R.drawable.checked_checkbox : R.drawable.unchecked_checkbox);
+        holder.textView1.setText(task.getContent());
+        holder.imageView.setImageResource(task.isIs_done() ?
+                R.drawable.iconfinder_tick : R.drawable.iconfinder_comment);
+        holder.textView2.setText(task.isIs_done() ? "" : "" + (position+1));
 
         holder.constraintLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mainActivity.updateTODO(position);
-            }
-        });
-
-        holder.constraintLayout.setOnLongClickListener(new View.OnLongClickListener() {
-            @Override
-            public boolean onLongClick(View v) {
-                mainActivity.removeTODO(position);
-                notifyDataSetChanged();
-                return false;
+                mainActivity.startNewActivity(position);
             }
         });
     }

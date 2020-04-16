@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "116052119715",
+    "firebase_url": "https://postpc-app1.firebaseio.com",
+    "project_id": "postpc-app1",
+    "storage_bucket": "postpc-app1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:116052119715:android:79bf05080c6c16d2f1af16",
+        "android_client_info": {
+          "package_name": "com.example.postpcapp1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "116052119715-d5e461ocfv4mdtkj85dh6iljso6ko1rt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.postpcapp1",
+            "certificate_hash": "64214a2a7787f76cd957c10fa200c15f187d7c06"
+          }
+        },
+        {
+          "client_id": "116052119715-76h5v33drdboefcfb4cv2bd22u8foqv5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLRxCLlZHZa32Vavy-GtCEPGZxYtWbWBM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "116052119715-76h5v33drdboefcfb4cv2bd22u8foqv5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

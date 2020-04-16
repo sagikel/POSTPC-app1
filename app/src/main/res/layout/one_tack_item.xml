@@ -17,11 +17,11 @@
         android:layout_marginBottom="10dp"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginRight="32dp"
-        android:src="@drawable/checked_checkbox">
+        android:src="@drawable/iconfinder_comment">
     </ImageView>
 
     <TextView
-        android:id="@+id/task_view"
+        android:id="@+id/taskview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
@@ -34,9 +34,26 @@
         android:text="@string/app_name"
         android:textSize="20sp"
         android:textColor="@color/grey"
+        android:shadowRadius="8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowColor="#FFFFFF"
         android:textStyle="bold"
         tools:ignore="RtlHardcoded">
     </TextView>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/checkbox"
+        app:layout_constraintEnd_toEndOf="@+id/checkbox"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/checkbox"
+        app:layout_constraintTop_toTopOf="@+id/checkbox"
+        app:layout_constraintVertical_bias="0.25" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
